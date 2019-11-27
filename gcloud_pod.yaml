@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gcloud-pod
+  labels:
+    app: gcloud-pod
+spec:
+  containers:
+  - name: gcloud-pod
+    image: pcarrascog/testgcp
+    command: ['cat']
+    tty: true
